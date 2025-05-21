@@ -1,0 +1,988 @@
+        /* Base styles and resets */
+        :root {
+            --primary: #274472; /* Deep blue */
+            --secondary: #c84b31; /* Warm orange/red - Nigerian flag accent */
+            --accent: #f4b41a; /* Gold accent - Nigerian flag accent */
+            --light: #f7f7f7;
+            --dark: #333;
+            --gray: #6c757d;
+            --font-family: 'Roboto', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--primary);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        /* Layout components */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -1rem;
+        }
+
+        .col {
+            flex: 1;
+            padding: 0 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        /* Header styles */
+        .header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 1rem;
+            margin-left: -3rem;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+            margin: 9px 0 0 -10px;
+        }
+
+        .church-name {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .church-tagline {
+            font-size: 0.8rem;
+            color: var(--gray);
+            font-style: italic;
+        }
+
+        /* Navigation */
+        .main-nav {
+            display: flex;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-left: 1.5rem;
+        }
+
+        .nav-link {
+            color: var(--dark);
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-link:hover {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        .nav-link.active {
+            color: var(--secondary);
+            border-bottom: 2px solid var(--secondary);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        .utility-nav {
+            background-color: var(--primary);
+            padding: 0.5rem 0;
+        }
+
+        .utility-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .utility-link {
+            color: white;
+            margin-left: 1.5rem;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .utility-link i {
+            margin-right: 0.5rem;
+        }
+
+        @media (max-width: 992px) {
+            .logo img {
+                margin-left: 5px;
+            }
+            .nav-list {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+
+            .nav-list.show {
+                display: flex;
+            }
+
+            .nav-item {
+                margin: 0.5rem 0;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
+
+        /* Hero section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/random/1200x600/?church,worship') no-repeat center center/cover;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: white;
+            border: 2px solid var(--secondary);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Info cards section */
+        .info-cards {
+            padding: 4rem 0;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* About section */
+        .about {
+            padding: 4rem 0;
+            background-color: var(--light);
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+            padding-right: 2rem;
+            min-width: 300px;
+        }
+
+        .pastor-profile {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            flex: 0 0 300px;
+        }
+
+        .pastor-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        /* Worship times */
+        .worship-times {
+            padding: 4rem 0;
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .worship-times h2 {
+            color: white;
+        }
+
+        .time-card {
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .time-day {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .time-hour {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Ministries section */
+        .ministries {
+            padding: 4rem 0;
+            background-color: white;
+        }
+
+        .ministry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .ministry-card {
+            background-color: var(--light);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ministry-img {
+            height: 150px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .ministry-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ministry-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .ministry-desc {
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        /* Events section */
+        .events {
+            padding: 4rem 0;
+            background-color: var(--light);
+        }
+
+        .event-card {
+            display: flex;
+            margin-bottom: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .event-date {
+            background-color: var(--secondary);
+            color: white;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-width: 100px;
+        }
+
+        .date-day {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .date-month {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        .event-details {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .event-time {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .event-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .event-location {
+            display: flex;
+            align-items: center;
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .event-location i {
+            margin-right: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .logo img{
+                margin-left: 0.5px;
+            }
+            .event-card {
+                flex-direction: column;
+            }
+
+            .event-date {
+                width: 100%;
+                flex-direction: row;
+                padding: 1rem;
+            }
+
+            .date-day, .date-month {
+                margin: 0 0.5rem;
+            }
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 4rem 0;
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .testimonials h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .testimonial {
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            margin: 0 1rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+        }
+
+        /* Call to action */
+        .cta {
+            padding: 5rem 0;
+            background-color: var(--accent);
+            text-align: center;
+        }
+
+        .cta h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .cta p {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
+
+        .footer-logo img {
+            height: 100px;
+            width: 130px;
+            margin-top: -2rem;
+        }
+
+        .footer h3 {
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: white;
+        }
+
+        .contact-info {
+            list-style: none;
+        }
+
+        .contact-info li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .contact-info i {
+            margin-right: 0.8rem;
+            color: var(--accent);
+            font-size: 1.2rem;
+            min-width: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+            margin-right: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background-color: var(--secondary);
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 3rem;
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* Prayer Wall */
+        .prayer-wall {
+            padding: 4rem 0;
+            background-color: white;
+        }
+
+        .prayer-form {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: var(--font-family);
+            font-size: 1rem;
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+        }
+
+        .prayer-requests {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .prayer-card {
+            background-color: var(--light);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .prayer-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .prayer-author {
+            font-weight: 500;
+        }
+
+        .prayer-date {
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+
+        .prayer-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .prayer-count {
+            display: flex;
+            align-items: center;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .prayer-count i {
+            margin-right: 0.5rem;
+            color: var(--secondary);
+        }
+
+        /* Media gallery */
+        .media-gallery {
+            padding: 4rem 0;
+            background-color: var(--light);
+        }
+
+        .gallery-nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .gallery-nav-item {
+            margin: 0 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: white;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-nav-item.active {
+            background-color: var(--secondary);
+            color: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay i {
+            color: white;
+            font-size: 2rem;
+        }
+
+        /* Calendar */
+        .calendar-section {
+            padding: 4rem 0;
+            background-color: white;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .calendar-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .month-nav {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+            padding: 0.5rem;
+        }
+
+        .current-month {
+            font-size: 1.8rem;
+            margin: 0 1rem;
+        }
+
+        .view-options {
+            display: flex;
+        }
+
+        .view-option {
+            padding: 0.5rem 1rem;
+            background-color: var(--light);
+            border: none;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .view-option.active {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 0.5rem;
+        }
+
+        .calendar-weekday {
+            text-align: center;
+            font-weight: 700;
+            padding: 0.5rem;
+            color: var(--gray);
+        }
+
+        .calendar-day {
+            min-height: 100px;
+            border-radius: 4px;
+            padding: 0.5rem;
+            background-color: var(--light);
+            position: relative;
+        }
+
+        .calendar-date {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8rem;
+        }
+
+        .calendar-day.current-month {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .calendar-day.today {
+            border: 2px solid var(--secondary);
+        }
+
+        .calendar-day.has-events {
+            cursor: pointer;
+        }
+
+        .day-event {
+            margin-top: 1.5rem;
+            padding: 0.3rem;
+            border-radius: 2px;
+            font-size: 0.7rem;
+            background-color: rgba(39, 68, 114, 0.1);
+            color: var(--primary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .event-list {
+            display: none;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+
+        .event-list.active {
+            display: block;
+        }
+
+        /* For smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .hero {
+                padding: 3rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .col {
+                flex: 0 0 100%;
+                margin-bottom: 2rem;
+            }
+            
+            .about-text {
+                padding-right: 0;
+            }
+            
+            .pastor-profile {
+                margin-top: 2rem;
+            }
+            
+            .calendar-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            
+            .calendar-weekday {
+                display: none;
+            }
+            
+            .calendar-day {
+                display: flex;
+                align-items: center;
+                min-height: 60px;
+            }
+            
+            .calendar-date {
+                position: static;
+                margin-right: 1rem;
+            }
+            
+            .day-event {
+                margin: 0;
+                flex: 1;
+            }
+
+            /* @media (max-width: 1300px){
+                .logo img{
+                    margin-left: 2rem;
+                }
+            } */
+
+        }

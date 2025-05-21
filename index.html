@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./sdalogo.png">
+    <title>NACA</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Utility Navigation -->
+    <div class="utility-nav">
+        <div class="container utility-container">
+            <a href="#" class="utility-link"><i class="fas fa-hand-holding-heart"></i> Online Giving</a>
+            <a href="#" class="utility-link"><i class="fas fa-pray"></i> Prayer Requests</a>
+            <a href="#" class="utility-link"><i class="fas fa-user"></i> Member Login</a>
+        </div>
+    </div>
+
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <!-- <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxlbGxpcHNlIHN0cm9rZS13aWR0aD0iMiIgcnk9IjQ3LjUiIHJ4PSI0Ny41IiBpZD0ic3ZnXzEiIGN5PSI1MCIgY3g9IjUwIiBzdHJva2U9IiMyNzQ0NzIiIGZpbGw9Im5vbmUiLz4KICA8ZWxsaXBzZSBzdHJva2Utd2lkdGg9IjIiIHJ5PSIzNiIgcng9IjM2IiBpZD0ic3ZnXzIiIGN5PSI1MCIgY3g9IjUwIiBzdHJva2U9IiNjODRiMzEiIGZpbGw9Im5vbmUiLz4KICA8dGV4dCBmb250LXN0eWxlPSJub3JtYWwiIGZvbnQtd2VpZ2h0PSJib2xkIiB4bWw6c3BhY2U9InByZXNlcnZlIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtc2l6ZT0iMTQiIHN0cm9rZS13aWR0aD0iMCIgaWQ9InN2Z18zIiB5PSI0NSIgeD0iMjYiIGZpbGw9IiMyNzQ0NzIiPk5BQ0E8L3RleHQ+CiAgPHRleHQgZm9udC1zdHlsZT0ibm9ybWFsIiBmb250LXdlaWdodD0iYm9sZCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LXNpemU9IjEwIiBzdHJva2Utd2lkdGg9IjAiIGlkPSJzdmdfNCIgeT0iNTciIHg9IjE4IiBmaWxsPSIjYzg0YjMxIj5TREEgQ2h1cmNoPC90ZXh0PgogIDxsaW5lIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InVuZGVmaW5lZCIgc3Ryb2tlLWxpbmVqb2luPSJ1bmRlZmluZWQiIGlkPSJzdmdfNiIgeTI9Ijc1IiB4Mj0iODIiIHkxPSIyNSIgeDE9IjE4IiBzdHJva2U9IiNmNGI0MWEiIGZpbGw9Im5vbmUiLz4KIDwvZz4KPC9zdmc+" alt="NACA Logo"> -->
+                 <img src="./sdalogo.png" alt="NACA Logo">
+                <div class="logo-text">
+                    <span class="church-name">Nigerian SDA Church of Atlanta</span>
+                    <span class="church-tagline">Preparing a People to meet their God</span>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list" id="navList">
+                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#worship" class="nav-link">Worship</a></li>
+                    <li class="nav-item"><a href="#ministries" class="nav-link">Ministries</a></li>
+                    <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
+                    <li class="nav-item"><a href="#media" class="nav-link">Media</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to Nigerian SDA Church of Atlanta</h1>
+            <p>We are a vibrant, multicultural church community united by our Nigerian heritage and our dedication to serving God and our community.</p>
+            <div>
+                <a href="#worship" class="btn btn-primary">Join Us for Worship</a>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Cards -->
+    <section class="info-cards">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <i class="fas fa-map-marker-alt card-icon"></i>
+                        <h3 class="card-title">Find Us</h3>
+                        <p>2418 Panola Rd<br>Lithonia, GA 30058-4830</p>
+                        <a href="https://maps.google.com" class="btn btn-primary">Get Directions</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <i class="fas fa-clock card-icon"></i>
+                        <h3 class="card-title">Service Times</h3>
+                        <p>Sabbath School: 9:30 am - Saturday<br>Worship Service: 11:00 am - Saturday</p>
+                        <a href="#worship" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <i class="fas fa-hands-helping card-icon"></i>
+                        <h3 class="card-title">New Here?</h3>
+                        <p>We'd love to welcome you to our church family. Find out what to expect on your first visit.</p>
+                        <a href="#" class="btn btn-primary">I'm New</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Our Church</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>The Nigerian Seventh-day Adventist Church of Atlanta is a vibrant, 100+ member, English-speaking church of multi-cultural heritage of Nigeria, living in the Atlanta metropolitan area.</p>
+                    <p>We are an enthusiastic soul-winning Church preparing a people to meet their God. Our passion is to finish God's work in our lifetime.</p>
+                    <p>If you are looking for a Church home where there is deep commitment and dedication in worshiping God in truth and in sincerity, then look no further. Our congregation represents the rich cultural diversity of Nigeria, while being united in our love for Christ and our community.</p>
+                    <p>We believe in making a difference in our local community through outreach programs, health ministries, and spiritual development initiatives. Join us as we grow together in faith and service.</p>
+                </div>
+                <div class="pastor-profile">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxlbGxpcHNlIHN0cm9rZT0iIzI3NDQ3MiIgcnk9Ijc0LjUiIHJ4PSI3NC41IiBpZD0ic3ZnXzEiIGN5PSI3NSIgY3g9Ijc1IiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNkZGRkZGQiLz4KICA8ZWxsaXBzZSBzdHJva2U9IiMwMDAiIHJ5PSIyMCIgcng9IjIwIiBpZD0ic3ZnXzIiIGN5PSI1MCIgY3g9Ijc1IiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiM1NTU1NTUiLz4KICA8ZWxsaXBzZSBzdHJva2U9IiMwMDAiIHJ5PSI0MCIgcng9IjMwIiBpZD0ic3ZnXzMiIGN5PSIxMTAiIGN4PSI3NSIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjNTU1NTU1Ii8+CiA8L2c+Cjwvc3ZnPg==" alt="Pastor Photo" class="pastor-img">
+                    <h3>Pastor Olufemi (Femi) Okorie</h3>
+                    <p>Lead Pastor</p>
+                    <p>"Welcome, and many thanks for accepting our invitation to join our church family."</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Worship Times Section -->
+    <section id="worship" class="worship-times">
+        <div class="container">
+            <h2 class="section-title">Worship With Us</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="time-card">
+                        <div class="time-day">Saturday</div>
+                        <div class="time-hour">Sabbath School: 9:30 AM</div>
+                        <div class="time-hour">Worship Service: 11:00 AM</div>
+                        <p>Join us for Bible study during Sabbath School followed by our main worship service.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="time-card">
+                        <div class="time-day">Wednesday</div>
+                        <div class="time-hour">Prayer Meeting: 7:00 PM</div>
+                        <p>Midweek prayer and Bible study to strengthen your spiritual journey.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="time-card">
+                        <div class="time-day">Friday</div>
+                        <div class="time-hour">Youth Meeting: 7:00 PM</div>
+                        <p>Special programs designed for our youth to grow in faith together.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministries Section -->
+    <section id="ministries" class="ministries">
+        <div class="container">
+            <h2 class="section-title">Our Ministries</h2>
+            <p class="text-center" style="margin-bottom: 3rem;">There are lots of ways that we touch our community and many more opportunities exist to make a difference.</p>
+            <div class="ministry-grid">
+                <div class="ministry-card">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzEiIGhlaWdodD0iMTUwIiB3aWR0aD0iMzAwIiB5PSIwIiB4PSIwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiMyNzQ0NzIiLz4KICA8Y2lyY2xlIHN0cm9rZT0iIzAwMCIgcj0iMjUiIGlkPSJzdmdfMiIgY3k9IjUwIiBjeD0iMTAyIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNmNGI0MWEiLz4KICA8Y2lyY2xlIHN0cm9rZT0iIzAwMCIgcj0iMjAiIGlkPSJzdmdfMyIgY3k9IjExMCIgY3g9IjE0MCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjYzg0YjMxIi8+CiAgPGNpcmNsZSBzdHJva2U9IiMwMDAiIHI9IjMwIiBpZD0ic3ZnXzQiIGN5PSI3MCIgY3g9IjE4MCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjZmZmZmZmIi8+CiAgPHRleHQgZm9udC13ZWlnaHQ9ImJvbGQiIHhtbDpzcGFjZT0icHJlc2VydmUiIHRleHQtYW5jaG9yPSJzdGFydCIgZm9udC1zaXplPSIxNCIgaWQ9InN2Z181IiB5PSI3NSIgeD0iMTY3IiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZT0iIzAwMCIgZmlsbD0iIzI3NDQ3MiI+WW91dGg8L3RleHQ+CiA8L2c+Cjwvc3ZnPg==" alt="Youth Ministry" class="ministry-img">
+                    <div class="ministry-content">
+                        <h3 class="ministry-title">Youth Ministry</h3>
+                        <p class="ministry-desc">Empowering young people to develop a personal relationship with Christ through Bible study, social activities, and service projects.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="ministry-card">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzEiIGhlaWdodD0iMTUwIiB3aWR0aD0iMzAwIiB5PSIwIiB4PSIwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNjODRiMzEiLz4KICA8cmVjdCBzdHJva2U9IiMwMDAiIHJ5PSIwIiByeD0iMCIgaWQ9InN2Z18yIiBoZWlnaHQ9IjUwIiB3aWR0aD0iNjAiIHk9IjUwIiB4PSI2MCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjZjRiNDFhIi8+CiAgPHJlY3Qgc3Ryb2tlPSIjMDAwIiByeT0iMCIgcng9IjAiIGlkPSJzdmdfMyIgaGVpZ2h0PSI1MCIgd2lkdGg9IjYwIiB5PSI1MCIgeD0iMTMwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNmNGI0MWEiLz4KICA8cmVjdCBzdHJva2U9IiMwMDAiIHJ5PSIwIiByeD0iMCIgaWQ9InN2Z180IiBoZWlnaHQ9IjUwIiB3aWR0aD0iNjAiIHk9IjUwIiB4PSIyMDAiIHN0cm9rZS13aWR0aD0iMCIgZmlsbD0iI2Y0YjQxYSIvPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzYiIGhlaWdodD0iMTAiIHdpZHRoPSIxMCIgY3k9IjEwMCIgY3g9IjEwMCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjMjc0NDcyIi8+CiAgPHJlY3Qgc3Ryb2tlPSIjMDAwIiByeT0iMCIgcng9IjAiIGlkPSJzdmdfNyIgaGVpZ2h0PSIxMCIgd2lkdGg9IjEwIiB5PSI2MCIgeD0iODUiIHN0cm9rZS13aWR0aD0iMCIgZmlsbD0iIzI3NDQ3MiIvPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzgiIGhlaWdodD0iMTAiIHdpZHRoPSIxMCIgeT0iNjAiIHg9IjE1NSIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjMjc0NDcyIi8+CiAgPHJlY3Qgc3Ryb2tlPSIjMDAwIiByeT0iMCIgcng9IjAiIGlkPSJzdmdfOSIgaGVpZ2h0PSIxMCIgd2lkdGg9IjEwIiB5PSI2MCIgeD0iMjI1IiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiMyNzQ0NzIiLz4KICA8dGV4dCBmb250LXdlaWdodD0iYm9sZCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LXNpemU9IjE0IiBpZD0ic3ZnXzUiIHk9IjExMCIgeD0iMTIwIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZT0iIzAwMCIgZmlsbD0iI2ZmZmZmZiI+TXVzaWM8L3RleHQ+CiA8L2c+Cjwvc3ZnPg==" alt="Music Ministry" class="ministry-img">
+                    <div class="ministry-content">
+                        <h3 class="ministry-title">Music Ministry</h3>
+                        <p class="ministry-desc">Enhancing worship through choirs, instrumental groups, and praise teams that blend traditional Nigerian music with contemporary Christian worship.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="ministry-card">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzEiIGhlaWdodD0iMTUwIiB3aWR0aD0iMzAwIiB5PSIwIiB4PSIwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNmNGI0MWEiLz4KICA8cmVjdCBzdHJva2U9IiMwMDAiIHJ5PSIwIiByeD0iMCIgaWQ9InN2Z18yIiBoZWlnaHQ9IjgwIiB3aWR0aD0iNjAiIHk9IjQwIiB4PSI1MCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjZmZmZmZmIi8+CiAgPHJlY3Qgc3Ryb2tlPSIjMDAwIiByeT0iMCIgcng9IjAiIGlkPSJzdmdfMyIgaGVpZ2h0PSI4MCIgd2lkdGg9IjEwMCIgeT0iNDAiIHg9IjEyMCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjZmZmZmZmIi8+CiAgPHJlY3Qgc3Ryb2tlPSIjMDAwIiByeT0iMCIgcng9IjAiIGlkPSJzdmdfNCIgaGVpZ2h0PSIxMCIgd2lkdGg9IjMwIiB5PSI1MCIgeD0iNjUiIHN0cm9rZS13aWR0aD0iMCIgZmlsbD0iI2M4NGIzMSIvPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzYiIGhlaWdodD0iMTAiIHdpZHRoPSI1MCIgeT0iNTAiIHg9IjE0NSIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjYzg0YjMxIi8+CiAgPHJlY3Qgc3Ryb2tlPSIjMDAwIiByeT0iMCIgcng9IjAiIGlkPSJzdmdfNyIgaGVpZ2h0PSIxMCIgd2lkdGg9IjUwIiB5PSI3MCIgeD0iMTQ1IiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiMyNzQ0NzIiLz4KICA8cmVjdCBzdHJva2U9IiMwMDAiIHJ5PSIwIiByeD0iMCIgaWQ9InN2Z184IiBoZWlnaHQ9IjEwIiB3aWR0aD0iMzAiIHk9IjkwIiB4PSI2NSIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjMjc0NDcyIi8+CiAgPHJlY3Qgc3Ryb2tlPSIjMDAwIiByeT0iMCIgcng9IjAiIGlkPSJzdmdfOSIgaGVpZ2h0PSIxMCIgd2lkdGg9IjUwIiB5PSI5MCIgeD0iMTQ1IiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNjODRiMzEiLz4KICA8dGV4dCBmb250LXdlaWdodD0iYm9sZCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LXNpemU9IjE0IiBpZD0ic3ZnXzUiIHk9IjEzNSIgeD0iODUiIHN0cm9rZS13aWR0aD0iMCIgc3Ryb2tlPSIjMDAwIiBmaWxsPSIjMjc0NDcyIj5Gb29kIFBhbnRyeTwvdGV4dD4KIDwvZz4KPC9zdmc+" alt="Food Pantry" class="ministry-img">
+                    <div class="ministry-content">
+                        <h3 class="ministry-title">Food Pantry</h3>
+                        <p class="ministry-desc">Providing nutritious food to families in need in our community, working to combat hunger in the Atlanta metropolitan area.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="ministry-card">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzEiIGhlaWdodD0iMTUwIiB3aWR0aD0iMzAwIiB5PSIwIiB4PSIwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiMyNzQ0NzIiLz4KICA8ZWxsaXBzZSBzdHJva2U9IiMwMDAiIHJ5PSIyMCIgcng9IjIwIiBpZD0ic3ZnXzIiIGN5PSI0MCIgY3g9IjEwMCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjZmZmZmZmIi8+CiAgPGVsbGlwc2Ugc3Ryb2tlPSIjMDAwIiByeT0iMjAiIHJ4PSIyMCIgaWQ9InN2Z18zIiBjeT0iNDAiIGN4PSIyMDAiIHN0cm9rZS13aWR0aD0iMCIgZmlsbD0iI2ZmZmZmZiIvPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzQiIGhlaWdodD0iNDAiIHdpZHRoPSIxMjAiIHk9IjcwIiB4PSI5MCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjZmZmZmZmIi8+CiAgPHJlY3Qgc3Ryb2tlPSIjMDAwIiByeT0iMCIgcng9IjAiIGlkPSJzdmdfNSIgaGVpZ2h0PSIxMCIgd2lkdGg9IjQ1IiB5PSI3NSIgeD0iMTI3LjUiIHN0cm9rZS13aWR0aD0iMCIgZmlsbD0iI2M4NGIzMSIvPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzkiIGhlaWdodD0iMTAiIHdpZHRoPSI0NSIgeT0iOTUiIHg9IjEyNy41IiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNjODRiMzEiLz4KICA8dGV4dCBmb250LXdlaWdodD0iYm9sZCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LXNpemU9IjE0IiBpZD0ic3ZnXzciIHk9IjEzMCIgeD0iOTUiIHN0cm9rZS13aWR0aD0iMCIgc3Ryb2tlPSIjMDAwIiBmaWxsPSIjZjRiNDFhIj5IZWFsdGggTWluaXN0cnk8L3RleHQ+CiA8L2c+Cjwvc3ZnPg==" alt="Health Ministry" class="ministry-img">
+                    <div class="ministry-content">
+                        <h3 class="ministry-title">Health Ministry</h3>
+                        <p class="ministry-desc">Promoting holistic health through education, screenings, and wellness programs that address physical, mental, and spiritual wellbeing.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="ministry-card">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzEiIGhlaWdodD0iMTUwIiB3aWR0aD0iMzAwIiB5PSIwIiB4PSIwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNjODRiMzEiLz4KICA8cG9seWdvbiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMCIgaWQ9InN2Z18yIiBwb2ludHM9IjE1MCwzMCAyMDAsMTAwIDEwMCwxMDAgIiBmaWxsPSIjZmZmZmZmIi8+CiAgPHRleHQgZm9udC13ZWlnaHQ9ImJvbGQiIHhtbDpzcGFjZT0icHJlc2VydmUiIHRleHQtYW5jaG9yPSJzdGFydCIgZm9udC1zaXplPSIxNCIgaWQ9InN2Z18zIiB5PSIxMzAiIHg9IjgwIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZT0iIzAwMCIgZmlsbD0iI2ZmZmZmZiI+UHJheWVyIE1pbmlzdHJ5PC90ZXh0PgogIDxsaW5lIHN0cm9rZS1saW5lY2FwPSJudWxsIiBzdHJva2UtbGluZWpvaW49Im51bGwiIGlkPSJzdmdfNCIgeTI9IjExMCIgeDI9IjE2MCIgeTE9IjExMCIgeDE9IjE0MCIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2U9IiNmZmZmZmYiIGZpbGw9Im5vbmUiLz4KICA8bGluZSBzdHJva2UtbGluZWNhcD0ibnVsbCIgc3Ryb2tlLWxpbmVqb2luPSJudWxsIiBpZD0ic3ZnXzUiIHkyPSIxMDAiIHgyPSIxNTAiIHkxPSIxMjAiIHgxPSIxNTAiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlPSIjZmZmZmZmIiBmaWxsPSJub25lIi8+CiA8L2c+Cjwvc3ZnPg==" alt="Prayer Ministry" class="ministry-img">
+                    <div class="ministry-content">
+                        <h3 class="ministry-title">Prayer Ministry</h3>
+                        <p class="ministry-desc">Standing in the gap in prayer for individuals, families, our church, community, and world events through intercessory prayer groups.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="ministry-card">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzEiIGhlaWdodD0iMTUwIiB3aWR0aD0iMzAwIiB5PSIwIiB4PSIwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNmNGI0MWEiLz4KICA8cmVjdCBzdHJva2U9IiMwMDAiIHJ5PSIxMCIgcng9IjEwIiBpZD0ic3ZnXzIiIGhlaWdodD0iODAiIHdpZHRoPSIxMjAiIHk9IjMwIiB4PSI5MCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjZmZmZmZmIi8+CiAgPHJlY3Qgc3Ryb2tlPSIjMDAwIiByeT0iMCIgcng9IjAiIGlkPSJzdmdfMyIgaGVpZ2h0PSI1IiB3aWR0aD0iMTAwIiB5PSI0MCIgeD0iMTAwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiMyNzQ0NzIiLz4KICA8cmVjdCBzdHJva2U9IiMwMDAiIHJ5PSIwIiByeD0iMCIgaWQ9InN2Z180IiBoZWlnaHQ9IjUiIHdpZHRoPSIxMDAiIHk9IjUwIiB4PSIxMDAiIHN0cm9rZS13aWR0aD0iMCIgZmlsbD0iIzI3NDQ3MiIvPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzUiIGhlaWdodD0iNSIgd2lkdGg9IjEwMCIgeT0iNjAiIHg9IjEwMCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjMjc0NDcyIi8+CiAgPHJlY3Qgc3Ryb2tlPSIjMDAwIiByeT0iMCIgcng9IjAiIGlkPSJzdmdfNiIgaGVpZ2h0PSI1IiB3aWR0aD0iMTAwIiB5PSI3MCIgeD0iMTAwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiMyNzQ0NzIiLz4KICA8cmVjdCBzdHJva2U9IiMwMDAiIHJ5PSIwIiByeD0iMCIgaWQ9InN2Z183IiBoZWlnaHQ9IjUiIHdpZHRoPSIxMDAiIHk9IjgwIiB4PSIxMDAiIHN0cm9rZS13aWR0aD0iMCIgZmlsbD0iIzI3NDQ3MiIvPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzgiIGhlaWdodD0iNSIgd2lkdGg9IjEwMCIgeT0iOTAiIHg9IjEwMCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjMjc0NDcyIi8+CiAgPHRleHQgZm9udC13ZWlnaHQ9ImJvbGQiIHhtbDpzcGFjZT0icHJlc2VydmUiIHRleHQtYW5jaG9yPSJzdGFydCIgZm9udC1zaXplPSIxNCIgaWQ9InN2Z185IiB5PSIxMzAiIHg9IjY1IiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZT0iIzAwMCIgZmlsbD0iIzI3NDQ3MiI+UmV2ZWxhdGlvbiBTZW1pbmFyPC90ZXh0PgogPC9nPgo8L3N2Zz4=" alt="Bible Study" class="ministry-img">
+                    <div class="ministry-content">
+                        <h3 class="ministry-title">Revelation Seminar</h3>
+                        <p class="ministry-desc">Exploring the prophecies and teachings of the book of Revelation through in-depth Bible study series for spiritual growth and understanding.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="event-card">
+                <div class="event-date">
+                    <div class="date-day">25</div>
+                    <div class="date-month">May</div>
+                </div>
+                <div class="event-details">
+                    <div class="event-time">10:00 AM - 2:00 PM</div>
+                    <h3 class="event-title">Community Health Fair</h3>
+                    <div class="event-location"><i class="fas fa-map-marker-alt"></i> Church Parking Lot</div>
+                    <p>Free health screenings, wellness information, and healthy living demonstrations for the entire community.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-date">
+                    <div class="date-day">01</div>
+                    <div class="date-month">Jun</div>
+                </div>
+                <div class="event-details">
+                    <div class="event-time">7:00 PM - 9:00 PM</div>
+                    <h3 class="event-title">Nigerian Cultural Night</h3>
+                    <div class="event-location"><i class="fas fa-map-marker-alt"></i> Fellowship Hall</div>
+                    <p>Celebrate Nigerian heritage through traditional food, music, attire, and cultural presentations.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-date">
+                    <div class="date-day">15</div>
+                    <div class="date-month">Jun</div>
+                </div>
+                <div class="event-details">
+                    <div class="event-time">9:00 AM - 12:00 PM</div>
+                    <h3 class="event-title">Vacation Bible School Registration</h3>
+                    <div class="event-location"><i class="fas fa-map-marker-alt"></i> Church Lobby</div>
+                    <p>Register your children for our exciting summer Vacation Bible School program filled with fun activities, Bible stories, and crafts.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 2rem;">
+                <a href="#" class="btn btn-primary">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Members Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p class="testimonial-text">"This church has been like a family to me since I moved to Atlanta. The Nigerian cultural elements make me feel at home, while the strong spiritual foundation helps me grow in my faith."</p>
+                    <div class="testimonial-author">- Church Member</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Join Our Church Family</h2>
+            <p>If you are looking for a Church home where there is deep commitment and dedication in worshiping God in truth, and in sincerity then look no further. We'd love to welcome you to our church family.</p>
+            <a href="#contact" class="btn btn-primary">Contact Us</a>
+            <a href="#worship" class="btn btn-outline">Plan Your Visit</a>
+        </div>
+    </section>
+
+    <!-- Prayer Wall Section -->
+    <section class="prayer-wall">
+        <div class="container">
+            <h2 class="section-title">Prayer Requests</h2>
+            <div class="prayer-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Your Name (Optional)</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="prayer" class="form-label">Prayer Request</label>
+                        <textarea id="prayer" class="form-control" placeholder="Share your prayer request..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Privacy</label>
+                        <div>
+                            <input type="radio" id="public" name="privacy" value="public" checked>
+                            <label for="public">Share with church family</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="private" name="privacy" value="private">
+                            <label for="private">Share with pastoral team only</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Prayer Request</button>
+                </form>
+            </div>
+            <div class="prayer-requests">
+                <div class="prayer-card">
+                    <div class="prayer-card-header">
+                        <span class="prayer-author">Anonymous</span>
+                        <span class="prayer-date">May 15, 2025</span>
+                    </div>
+                    <p class="prayer-text">Please pray for my upcoming medical procedure and quick recovery.</p>
+                    <div class="prayer-count"><i class="fas fa-pray"></i> 24 people praying</div>
+                </div>
+                <div class="prayer-card">
+                    <div class="prayer-card-header">
+                        <span class="prayer-author">Church Member</span>
+                        <span class="prayer-date">May 12, 2025</span>
+                    </div>
+                    <p class="prayer-text">Praying for my son who is looking for a new job opportunity after graduating college.</p>
+                    <div class="prayer-count"><i class="fas fa-pray"></i> 18 people praying</div>
+                </div>
+                <div class="prayer-card">
+                    <div class="prayer-card-header">
+                        <span class="prayer-author">Anonymous</span>
+                        <span class="prayer-date">May 10, 2025</span>
+                    </div>
+                    <p class="prayer-text">Thanksgiving for God's blessings on my family and recent answered prayers.</p>
+                    <div class="prayer-count"><i class="fas fa-pray"></i> 32 people praying</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Gallery Section -->
+    <section id="media" class="media-gallery">
+        <div class="container">
+            <h2 class="section-title">Media Gallery</h2>
+            <div class="gallery-nav">
+                <div class="gallery-nav-item active">All</div>
+                <div class="gallery-nav-item">Worship</div>
+                <div class="gallery-nav-item">Events</div>
+                <div class="gallery-nav-item">Outreach</div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzEiIGhlaWdodD0iMjAwIiB3aWR0aD0iMzAwIiB5PSIwIiB4PSIwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiMyNzQ0NzIiLz4KICA8cmVjdCBzdHJva2U9IiMwMDAiIHJ5PSIwIiByeD0iMCIgaWQ9InN2Z18yIiBoZWlnaHQ9IjUwIiB3aWR0aD0iMzAwIiB5PSIxNTAiIHg9IjAiIHN0cm9rZS13aWR0aD0iMCIgZmlsbD0iI2M4NGIzMSIvPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzMiIGhlaWdodD0iNSIgd2lkdGg9IjI1MCIgeT0iMTcwIiB4PSIyNSIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjZmZmZmZmIi8+CiAgPHJlY3Qgc3Ryb2tlPSIjMDAwIiByeT0iMCIgcng9IjAiIGlkPSJzdmdfNCIgaGVpZ2h0PSI1IiB3aWR0aD0iMjAwIiB5PSIxODAiIHg9IjUwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNmZmZmZmYiLz4KICA8Y2lyY2xlIHN0cm9rZT0iIzAwMCIgcj0iNDAiIGlkPSJzdmdfNSIgY3k9IjgwIiBjeD0iMTUwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNmNGI0MWEiLz4KICA8cG9seWdvbiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMCIgaWQ9InN2Z182IiBwb2ludHM9IjE2MCw3MCAxODAsOTAgMTQwLDkwICIgZmlsbD0iI2ZmZmZmZiIvPgogPC9nPgo8L3N2Zz4=" alt="Church Service" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzEiIGhlaWdodD0iMjAwIiB3aWR0aD0iMzAwIiB5PSIwIiB4PSIwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNmNGI0MWEiLz4KICA8cmVjdCBzdHJva2U9IiMwMDAiIHJ5PSIwIiByeD0iMCIgaWQ9InN2Z18yIiBoZWlnaHQ9IjUwIiB3aWR0aD0iMzAwIiB5PSIxNTAiIHg9IjAiIHN0cm9rZS13aWR0aD0iMCIgZmlsbD0iIzI3NDQ3MiIvPgogIDxlbGxpcHNlIHN0cm9rZT0iIzAwMCIgcnk9IjIwIiByeD0iMjAiIGlkPSJzdmdfMyIgY3k9IjYwIiBjeD0iOTAiIHN0cm9rZS13aWR0aD0iMCIgZmlsbD0iI2ZmZmZmZiIvPgogIDxlbGxpcHNlIHN0cm9rZT0iIzAwMCIgcnk9IjIwIiByeD0iMjAiIGlkPSJzdmdfNCIgY3k9IjYwIiBjeD0iMTUwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNmZmZmZmYiLz4KICA8ZWxsaXBzZSBzdHJva2U9IiMwMDAiIHJ5PSIyMCIgcng9IjIwIiBpZD0ic3ZnXzUiIGN5PSI2MCIgY3g9IjIxMCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjZmZmZmZmIi8+CiAgPGVsbGlwc2Ugc3Ryb2tlPSIjMDAwIiByeT0iMTAiIHJ4PSIxMCIgaWQ9InN2Z182IiBjeT0iMTEwIiBjeD0iNjAiIHN0cm9rZS13aWR0aD0iMCIgZmlsbD0iI2ZmZmZmZiIvPgogIDxlbGxpcHNlIHN0cm9rZT0iIzAwMCIgcnk9IjEwIiByeD0iMTAiIGlkPSJzdmdfNyIgY3k9IjExMCIgY3g9IjEyMCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjZmZmZmZmIi8+CiAgPGVsbGlwc2Ugc3Ryb2tlPSIjMDAwIiByeT0iMTAiIHJ4PSIxMCIgaWQ9InN2Z184IiBjeT0iMTEwIiBjeD0iMTgwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNmZmZmZmYiLz4KICA8ZWxsaXBzZSBzdHJva2U9IiMwMDAiIHJ5PSIxMCIgcng9IjEwIiBpZD0ic3ZnXzkiIGN5PSIxMTAiIGN4PSIyNDAiIHN0cm9rZS13aWR0aD0iMCIgZmlsbD0iI2ZmZmZmZiIvPgogPC9nPgo8L3N2Zz4=" alt="Church Choir" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzEiIGhlaWdodD0iMjAwIiB3aWR0aD0iMzAwIiB5PSIwIiB4PSIwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiMyNzQ0NzIiLz4KICA8cmVjdCBzdHJva2U9IiMwMDAiIHJ5PSIwIiByeD0iMCIgaWQ9InN2Z18yIiBoZWlnaHQ9IjUwIiB3aWR0aD0iMzAwIiB5PSIxNTAiIHg9IjAiIHN0cm9rZS13aWR0aD0iMCIgZmlsbD0iI2M4NGIzMSIvPgogIDxlbGxpcHNlIHN0cm9rZT0iIzAwMCIgcnk9IjMwIiByeD0iNzUiIGlkPSJzdmdfNSIgY3k9IjgwIiBjeD0iMTUwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNmZmZmZmYiLz4KICA8dGV4dCB4bWw6c3BhY2U9InByZXNlcnZlIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtc2l6ZT0iMjQiIHN0cm9rZS13aWR0aD0iMCIgaWQ9InN2Z18xMCIgeT0iOTAiIHg9IjExNSIgc3Ryb2tlPSIjMDAwIiBmaWxsPSIjMjc0NDcyIj5WQlM8L3RleHQ+CiA8L2c+Cjwvc3ZnPg==" alt="VBS" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzEiIGhlaWdodD0iMjAwIiB3aWR0aD0iMzAwIiB5PSIwIiB4PSIwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNmNGI0MWEiLz4KICA8cmVjdCBzdHJva2U9IiMwMDAiIHJ5PSIwIiByeD0iMCIgaWQ9InN2Z18yIiBoZWlnaHQ9IjE1MCIgd2lkdGg9IjIwMCIgeT0iMjUiIHg9IjUwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiN3aGl0ZSIvPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzIiIGhlaWdodD0iMTUiIHdpZHRoPSIxNjAiIHk9IjUwIiB4PSI3MCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjMjc0NDcyIi8+CiAgPHJlY3Qgc3Ryb2tlPSIjMDAwIiByeT0iMCIgcng9IjAiIGlkPSJzdmdfMiIgaGVpZ2h0PSIxNSIgd2lkdGg9IjE2MCIgeT0iODAiIHg9IjcwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNjODRiMzEiLz4KICA8cmVjdCBzdHJva2U9IiMwMDAiIHJ5PSIwIiByeD0iMCIgaWQ9InN2Z18yIiBoZWlnaHQ9IjE1IiB3aWR0aD0iMTYwIiB5PSIxMTAiIHg9IjcwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiMyNzQ0NzIiLz4KICA8cmVjdCBzdHJva2U9IiMwMDAiIHJ5PSIwIiByeD0iMCIgaWQ9InN2Z18yIiBoZWlnaHQ9IjE1IiB3aWR0aD0iMTYwIiB5PSIxNDAiIHg9IjcwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNjODRiMzEiLz4KIDwvZz4KPC9zdmc+" alt="Bible Study" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzEiIGhlaWdodD0iMjAwIiB3aWR0aD0iMzAwIiB5PSIwIiB4PSIwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNjODRiMzEiLz4KICA8cmVjdCBzdHJva2U9IiMwMDAiIHJ5PSIwIiByeD0iMCIgaWQ9InN2Z18yIiBoZWlnaHQ9IjgwIiB3aWR0aD0iODAiIHk9IjYwIiB4PSI0MCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjZmZmZmZmIi8+CiAgPHJlY3Qgc3Ryb2tlPSIjMDAwIiByeT0iMCIgcng9IjAiIGlkPSJzdmdfMyIgaGVpZ2h0PSI4MCIgd2lkdGg9IjgwIiB5PSI2MCIgeD0iMTYwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiNmZmZmZmYiLz4KICA8cmVjdCBzdHJva2U9IiMwMDAiIHJ5PSIwIiByeD0iMCIgaWQ9InN2Z18zIiBoZWlnaHQ9IjIwIiB3aWR0aD0iMjAiIHk9IjkwIiB4PSI3MCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjMjc0NDcyIi8+CiAgPHJlY3Qgc3Ryb2tlPSIjMDAwIiByeT0iMCIgcng9IjAiIGlkPSJzdmdfMyIgaGVpZ2h0PSIyMCIgd2lkdGg9IjIwIiB5PSI5MCIgeD0iMTkwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiMyNzQ0NzIiLz4KIDwvZz4KPC9zdmc+" alt="Community Outreach" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnPgogIDxyZWN0IHN0cm9rZT0iIzAwMCIgcnk9IjAiIHJ4PSIwIiBpZD0ic3ZnXzEiIGhlaWdodD0iMjAwIiB3aWR0aD0iMzAwIiB5PSIwIiB4PSIwIiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiMyNzQ0NzIiLz4KICA8cG9seWdvbiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMCIgaWQ9InN2Z18yIiBwb2ludHM9IjE1MCwzMCAyNDAsMTgwIDYwLDE4MCIgZmlsbD0iI2Y0YjQxYSIvPgogIDxwb2x5Z29uIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIwIiBpZD0ic3ZnXzMiIHBvaW50cz0iMTUwLDYwIDE5MCwxNDAgMTEwLDE0MCIgZmlsbD0id2hpdGUiLz4KIDwvZz4KPC9zdmc+" alt="Youth Program" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section class="calendar-section">
+        <div class="container">
+            <h2 class="section-title">Church Calendar</h2>
+            <div class="calendar-header">
+                <div class="calendar-title">
+                    <button class="month-nav prev-month"><i class="fas fa-chevron-left"></i></button>
+                    <h3 class="current-month">May 2025</h3>
+                    <button class="month-nav next-month"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="view-options">
+                    <button class="view-option active">Month</button>
+                    <button class="view-option">List</button>
+                </div>
+            </div>
+            <div class="calendar-grid">
+                <div class="calendar-weekday">Sun</div>
+                <div class="calendar-weekday">Mon</div>
+                <div class="calendar-weekday">Tue</div>
+                <div class="calendar-weekday">Wed</div>
+                <div class="calendar-weekday">Thu</div>
+                <div class="calendar-weekday">Fri</div>
+                <div class="calendar-weekday">Sat</div>
+                
+                <!-- Previous month -->
+                <div class="calendar-day">
+                    <div class="calendar-date">27</div>
+                </div>
+                <div class="calendar-day">
+                    <div class="calendar-date">28</div>
+                </div>
+                <div class="calendar-day">
+                    <div class="calendar-date">29</div>
+                </div>
+                <div class="calendar-day">
+                    <div class="calendar-date">30</div>
+                </div>
+                
+                <!-- Current month -->
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">1</div>
+                </div>
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">2</div>
+                </div>
+                <div class="calendar-day current-month has-events">
+                    <div class="calendar-date">3</div>
+                    <div class="day-event">Sabbath School & Worship</div>
+                </div>
+                
+                <!-- Week 2 -->
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">4</div>
+                </div>
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">5</div>
+                </div>
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">6</div>
+                </div>
+                <div class="calendar-day current-month has-events">
+                    <div class="calendar-date">7</div>
+                    <div class="day-event">Prayer Meeting</div>
+                </div>
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">8</div>
+                </div>
+                <div class="calendar-day current-month has-events">
+                    <div class="calendar-date">9</div>
+                    <div class="day-event">Youth Meeting</div>
+                </div>
+                <div class="calendar-day current-month has-events">
+                    <div class="calendar-date">10</div>
+                    <div class="day-event">Sabbath School & Worship</div>
+                </div>
+                
+                <!-- Week 3 -->
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">11</div>
+                </div>
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">12</div>
+                </div>
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">13</div>
+                </div>
+                <div class="calendar-day current-month has-events">
+                    <div class="calendar-date">14</div>
+                    <div class="day-event">Prayer Meeting</div>
+                </div>
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">15</div>
+                </div>
+                <div class="calendar-day current-month has-events">
+                    <div class="calendar-date">16</div>
+                    <div class="day-event">Youth Meeting</div>
+                </div>
+                <div class="calendar-day current-month has-events">
+                    <div class="calendar-date">17</div>
+                    <div class="day-event">Sabbath School & Worship</div>
+                </div>
+                
+                <!-- Week 4 -->
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">18</div>
+                </div>
+                <div class="calendar-day current-month today">
+                    <div class="calendar-date">19</div>
+                </div>
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">20</div>
+                </div>
+                <div class="calendar-day current-month has-events">
+                    <div class="calendar-date">21</div>
+                    <div class="day-event">Prayer Meeting</div>
+                </div>
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">22</div>
+                </div>
+                <div class="calendar-day current-month has-events">
+                    <div class="calendar-date">23</div>
+                    <div class="day-event">Youth Meeting</div>
+                </div>
+                <div class="calendar-day current-month has-events">
+                    <div class="calendar-date">24</div>
+                    <div class="day-event">Sabbath School & Worship</div>
+                </div>
+                
+                <!-- Week 5 -->
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">25</div>
+                    <div class="day-event">Community Health Fair</div>
+                </div>
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">26</div>
+                </div>
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">27</div>
+                </div>
+                <div class="calendar-day current-month has-events">
+                    <div class="calendar-date">28</div>
+                    <div class="day-event">Prayer Meeting</div>
+                </div>
+                <div class="calendar-day current-month">
+                    <div class="calendar-date">29</div>
+                </div>
+                <div class="calendar-day current-month has-events">
+                    <div class="calendar-date">30</div>
+                    <div class="day-event">Youth Meeting</div>
+                </div>
+                <div class="calendar-day current-month has-events">
+                    <div class="calendar-date">31</div>
+                    <div class="day-event">Sabbath School & Worship</div>
+                </div>
+            </div>
+            <div class="event-list" id="eventList">
+                <h3>May 25, 2025 - Events</h3>
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="date-day">25</div>
+                        <div class="date-month">May</div>
+                    </div>
+                    <div class="event-details">
+                        <div class="event-time">10:00 AM - 2:00 PM</div>
+                        <h3 class="event-title">Community Health Fair</h3>
+                        <div class="event-location"><i class="fas fa-map-marker-alt"></i> Church Parking Lot</div>
+                        <p>Free health screenings, wellness information, and healthy living demonstrations for the entire community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="row">
+                <div class="col">
+                    <h3>Church Information</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Address:</strong><br>
+                                2418 Panola Rd<br>
+                                Lithonia, GA 30058-4830
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone:</strong><br>
+                                909-374-3826
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong><br>
+                                info@nacachurch.org
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Worship Times:</strong><br>
+                                Sabbath School: 9:30 am - Saturday<br>
+                                Worship Service: 11:00 am - Saturday
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="contactName" class="form-label">Your Name</label>
+                            <input type="text" id="contactName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail" class="form-label">Your Email</label>
+                            <input type="email" id="contactEmail" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject" class="form-label">Subject</label>
+                            <input type="text" id="contactSubject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea id="contactMessage" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer-logo">
+                        <img src="./sdalogo.png" alt="NACA Logo">
+                        <span>Nigerian Seventh-day Adventist Church of Atlanta</span>
+                    </div>
+                    <p>We are a vibrant, 100+ member, english-speaking church, of multi-cultural heritage of Nigeria, living in Atlanta metropolitan area.</p>
+                </div>
+                <div class="col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#worship">Worship Times</a></li>
+                        <li><a href="#ministries">Ministries</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#media">Media</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Online Giving</a></li>
+                        <li><a href="#">Prayer Requests</a></li>
+                        <li><a href="#">Church Bulletin</a></li>
+                        <li><a href="#">Sermon Archive</a></li>
+                        <li><a href="#">Revelation Seminar</a></li>
+                        <li><a href="#">Vacation Bible School</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>2418 Panola Rd<br>Lithonia, GA 30058-4830</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>909-374-3826</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>info@nacachurch.org</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nigerian Seventh-day Adventist Church of Atlanta. All rights reserved.</p>
+                <p>Provided by the North American Division and AdventistChurchConnect.org</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
