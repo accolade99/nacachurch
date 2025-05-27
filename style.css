@@ -53,7 +53,7 @@
         }
 
         a:hover {
-            color: var(--primary);
+            color: #6c757d;
             text-decoration: underline;
         }
 
