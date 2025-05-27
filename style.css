@@ -101,6 +101,8 @@
         .logo {
             display: flex;
             align-items: center;
+            margin-top: -10px;
+            margin-bottom: -10px;
         }
 
         .logo img {
@@ -1006,5 +1008,9 @@
         position: absolute;
         left: 0;
         top: 0;
+        }
+        .logo img {
+        height: 40px;
+        margin-bottom: -5px;
         }
         }
