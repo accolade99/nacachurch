@@ -1004,7 +1004,7 @@
         }
 
         .logo .logo-text .church-name::after {
-        content: 'NACA';
+        content: 'NACA Church';
         visibility: visible;
         position: absolute;
         left: 0;
