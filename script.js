@@ -1,7 +1,21 @@
-        // Mobile menu toggle
-        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
-            document.getElementById('navList').classList.toggle('show');
-        });
+// Mobile menu toggle functionality
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const navList = document.getElementById('navList');
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Toggle menu on button click
+mobileMenuBtn.addEventListener('click', function() {
+    navList.classList.toggle('show');
+});
+
+// Close menu when a link is clicked
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        if (navList.classList.contains('show')) {
+            navList.classList.remove('show');
+        }
+    });
+});
 
         // Calendar date click handler
         const calendarDays = document.querySelectorAll('.calendar-day.has-events');
